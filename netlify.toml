@@ -17,7 +17,20 @@
   ACKEE_ALLOW_ORIGIN = "ACKEE_ALLOW_ORIGIN"
 
 [[headers]]
-# Define which paths this specific [[headers]] block will cover.
 for = "/api"
-  [headers.values]
-  Access-Control-Allow-Origin = "https://devs.coffee"
+[headers.values]
+Access-Control-Allow-Origin = [
+"https://devs.coffee",
+"http://devs.coffee",
+"devs.coffee",
+"*"
+]
+[[headers]]
+for = "/*"
+[headers.values]
+Access-Control-Allow-Origin = [
+"https://devs.coffee",
+"http://devs.coffee",
+"devs.coffee",
+"*"
+]
