@@ -17,20 +17,6 @@
   ACKEE_ALLOW_ORIGIN = "ACKEE_ALLOW_ORIGIN"
 
 [[headers]]
-for = "/api"
-[headers.values]
-Access-Control-Allow-Origin = [
-"https://devs.coffee",
-"http://devs.coffee",
-"devs.coffee",
-"*"
-]
-[[headers]]
 for = "/*"
 [headers.values]
-Access-Control-Allow-Origin = [
-"https://devs.coffee",
-"http://devs.coffee",
-"devs.coffee",
-"*"
-]
+Access-Control-Allow-Origin = "*"
